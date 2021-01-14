@@ -21,9 +21,7 @@ valores = [
     ("Transporte", 208.45),
     ("Viagem", 558.54)
 ]
-for pos in range(0, len(valores)):
-    if pos % 2 == 0:
-        print(f'{valores[pos]:30}')
+
 
 fplanilha = pd.DataFrame(planilha)    # printando-a para ver se esta tudo correto
 
