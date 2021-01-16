@@ -25,4 +25,4 @@ valores = [
 
 fplanilha = pd.DataFrame(planilha)    # printando-a para ver se esta tudo correto
 
-#print(fplanilha)
+print(fplanilha)
