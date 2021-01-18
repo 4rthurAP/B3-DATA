@@ -1,4 +1,5 @@
-# B3-DATA
- Projeto em python na analise de dados da B3
+# B3-DATA ## 
+ ## Projeto em python na analise de dados da B3
  
- Inicialmente o objetico é apenas a formatação dos dados tal que possam ser utilizados em planilhas padrão xlsx
+  Esse projeto foi baseado em uma busca pessoal, onde gostaria de observar o quão longe poderia ir a fundo, não cheguei nem perto de ver o fundo mas consegui puxar ótimos dados da B3 onde poderei manipula-los e estuda-los fique a vontade em editar e adicionar modificações.
+  
