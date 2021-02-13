@@ -12,22 +12,27 @@ ambv = Ticker("ABEV3.SA")
 embr = Ticker("EMBR3.SA")
 
 # Históricos
-
-ambvhistory  = ambv.history(period = "1d", interval = "1m")
-embrhistory  = embr.history(period = "1d", interval = "1m")
+# AMBV
+def ambev():
+    ambvhistory = ambv.history(period = "1d", interval = "1m")
+    return ambvhistory
+#EMBR
+def embraer(): 
+    embrhistory  = embr.history(period = "1d", interval = "1m")
+    return embrhistory
 
 # escrevendo os históricos
-ambvhistory.to_excel('Pasta1.xlsx')
-embrhistory.to_excel('Pasta1.xlsx')
+ambev().to_excel('Pasta1.xlsx')
+embraer().to_excel('Pasta1.xlsx')
 
 # Criando um pandas writter no arquivo desejado.
 
-writer = pd.ExcelWriter('Pasta1.xlsx')
+writer = pd.ExcelWriter('D:/finance/B3-DATA/Ativos.xlsx')
 
 # Converter o DataFrame em um arquivo xlsx.
 
-ambvhistory.to_excel(writer, sheet_name='AMBV3')
-embrhistory.to_excel(writer, sheet_name='EMBR3')
+ambev().to_excel(writer, sheet_name='AMBV3')
+embraer().to_excel(writer, sheet_name='EMBR3')
 
 # Salvar no arquivo xlsx. 
 

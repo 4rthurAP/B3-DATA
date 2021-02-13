@@ -1,0 +1,3 @@
+- Criar um sistema de adiçao de arquivos;
+- Upar o site para a web;
+- Utilizar gráficos;
